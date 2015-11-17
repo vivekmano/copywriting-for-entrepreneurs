@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  form#msform(enctype="text/plain", method="post")
+  form#msform(action="/", method="POST", role="form")
     fieldset
       h2.fs-title Headline
       h3.fs-subtitle How do you capture someone's attention?
@@ -34,20 +34,34 @@ block content
       h3.fs-subtitle What does your customer get when they buy your product?
       textarea(type="text", rows="4", name="offer", placeholder="What's in the box?")
     fieldset
-      h2.fs-title Information
-      div Name
-        input(type="text", name="firstname", placeholder="First Name").name
-        input(type="text", name="lastname", placeholder="Last Name").name
-      div URL
-        input(type="text", name="url", placeholder="e.g. www.amazingidea.com").url
-      div Email
-        input(type="text", name="email", placeholder="e.g. me@amazingidea.com")
-    fieldset
-      h2.fs-title Final touches
-      h3.fs-subtitle Do you have a deadline for your customer?
-        input(type="text", name="urgency", placeholder="e.g. Expires in 72hrs")
-      h3.fs-subtitle Is there a limited supply of your product?
-        input(type="text", name="scarcity", placeholder="e.g. Only 7 left!")
-      h3.fs-subtitle Is there a bonus for signing up?
-        input(type="text", name="bonus", placeholder="e.g. Free guide for signing up today!")
-      
+      .row
+        .col-md-12
+          .fs-title Information
+      .row
+        .col-md-2
+          label Name
+        .col-md-5
+          input(type="text", name="firstname", placeholder="First Name")
+        .col-md-5
+          input(type="text", name="lastname", placeholder="Last Name")
+      .row
+        .col-md-2
+          label URL
+        .col-md-10
+          input(type="text", name="url", placeholder="e.g. www.amazingidea.com")
+      .row  
+        .col-md-2
+          label Email
+        .col-md-10
+          input(type="text", name="email", placeholder="e.g. me@amazingidea.com")
+      .row
+        .col-md-12
+          button(type="submit").btn.btn-lg.action-button Turn my words into sweet sweet copy!
+    // fieldset
+    //   h2.fs-title Final touches
+    //   h3.fs-desc Do you have a deadline for your customer?
+    //   input(type="text", name="urgency", placeholder="e.g. Expires in 72hrs")
+    //   h3.fs-desc Is there a limited supply of your product?
+    //   input(type="text", name="scarcity", placeholder="e.g. Only 7 left!")
+    //   h3.fs-desc Is there a bonus for signing up?
+    //   input(type="text", name="bonus", placeholder="e.g. Free guide for signing up today!")

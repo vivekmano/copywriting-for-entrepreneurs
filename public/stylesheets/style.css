@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 /*basic reset*/
-* {margin: 0; padding: 0;}
+/** {margin: 0; padding: 0;}*/
 
 html {
 	height: 100%;
@@ -15,6 +15,7 @@ html {
 
 body {
 	font-family: montserrat, arial, verdana;
+	background: #555555; 
 }
 /*form styles*/
 #msform {
@@ -57,7 +58,7 @@ body {
   
 }
 
-#msform textarea {
+#msform textarea, input {
 	padding: 15px;
 	border: 3px solid #ccc;
 	border-radius: 3px;
@@ -69,43 +70,14 @@ body {
 	font-size: 16px;
 }
 
-.fab {
-	padding: 15px;
+#msform input.fab {
 	border: 1px solid #ccc;
 	border-radius: 1px;
-	width: 100%;
-	box-sizing: border-box;
-	font-family: montserrat;
-	color: #2C3E50;
-	font-size: 16px;
+	margin-bottom: 0;
 }
-
-.name {
-	padding: 15px;
-	margin-left: 10px;
-	margin-bottom: 10px;
-	border: 1px solid #ccc;
-	border-radius: 1px;
-	width: 35%;
-	font-family: montserrat;
-	color: #2C3E50;
-	font-size: 16px;
-}
-
-.url {
-	padding: 15px;
-	margin-left: 10px;
-	border: 1px solid #ccc;
-	border-radius: 1px;
-	width: 80%;
-	font-family: montserrat;
-	color: #2C3E50;
-	font-size: 16px;
-}
-
 /*buttons*/
 #msform .action-button {
-	width: 100px;
+	width: 100%;
 	background: #27AE60;
 	font-weight: bold;
 	color: white;
@@ -131,6 +103,7 @@ body {
 	color: #666;
 	margin-bottom: 20px;
 }
+
 /*progressbar*/
 #progressbar {
 	margin-bottom: 30px;
