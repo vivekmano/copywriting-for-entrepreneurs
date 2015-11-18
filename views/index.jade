@@ -2,16 +2,16 @@ extends layout
 
 block content
   form#msform(action="/", method="POST", role="form")
-    fieldset
+    fieldset.step
       h2.fs-title Headline
       h3.fs-subtitle How do you capture someone's attention?
       textarea(type="text", rows="2", name="headline", maxlength="140", autofocus, placeholder="This shouldn't be longer than a tweet")
-    fieldset
+    fieldset.step
       h2.fs-title Opening
       h3.fs-subtitle Problem and Solution
       textarea(type="text", rows="4", name="problem", placeholder="What is your customer's problem?")
       textarea(type="text", rows="4", name="solution", placeholder="How do you solve their problem?")
-    fieldset
+    fieldset.step
       h2.fs-title Features and Benefits
       h3.fs-subtitle List your product's features and benefits
       #fab
@@ -29,11 +29,11 @@ block content
       #fab
         input(type="text", name="f2", placeholder="Feature #5").fab
         input(type="text", name="b2", placeholder="Benefit #5").fab
-    fieldset
+    fieldset.step
       h2.fs-title Offer
       h3.fs-subtitle What does your customer get when they buy your product?
       textarea(type="text", rows="4", name="offer", placeholder="What's in the box?")
-    fieldset
+    fieldset.step
       .row
         .col-md-12
           .fs-title Information
