@@ -2,20 +2,18 @@ extends layout
 
 block content
   #rootwizard
-    .navbar
-      .navbar-inner
-        .container
-          ul
-            li
-              a(href="#tab1", data-toggle="tab") Headline
-            li
-              a(href="#tab2", data-toggle="tab") Opening
-            li  
-              a(href="#tab3", data-toggle="tab") FAB
-            li  
-              a(href="#tab4", data-toggle="tab") Offer
-            li  
-              a(href="#tab5", data-toggle="tab") Info
+    .my-nav
+      ul
+        li
+          a(href="#tab1", data-toggle="tab") Headline
+        li
+          a(href="#tab2", data-toggle="tab") Opening
+        li  
+          a(href="#tab3", data-toggle="tab") FAB
+        li  
+          a(href="#tab4", data-toggle="tab") Offer
+        li  
+          a(href="#tab5", data-toggle="tab") Info
     form#msform(action="/", method="POST", role="form").tab-content
       fieldset#tab1.tab-pane
         h2.fs-title Headline
