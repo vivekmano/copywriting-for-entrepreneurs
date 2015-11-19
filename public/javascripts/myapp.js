@@ -1,3 +1,3 @@
-$('.step').stepify({
-   distribution:[1,1,1,1,1] 
+$(function() {
+  $(".bs-wizard").bs_wizard();
 });
