@@ -1,10 +1,6 @@
 var nodemailer = require('nodemailer');
 
 var CustomMail = function (content){
-	//this.firstname = firstname;
-	//this.lastname = lastname;
-	//this.emailto = emailto;
-	//this.template = template;
 	this.content = content;
 };
 
