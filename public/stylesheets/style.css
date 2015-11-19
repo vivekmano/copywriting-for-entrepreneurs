@@ -9,6 +9,19 @@ html, body {
 	background: #555555; 
 	background: url('../images/background.jpg');
 }
+/*nav*/
+.navbar-nav>li a:active {
+  background: #fafafa;
+  border-radius: 5px;
+}
+
+.navbar-nav{
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float:none;
+}
+
 /*form styles*/
 #msform {
 	max-width: 800px;
@@ -16,7 +29,22 @@ html, body {
 	text-align: center;
 	position: relative;
 }
-#msform fieldset {
+#successform fieldset {
+	max-width: 800px;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
+	background: #fafafa;
+	border: 0 none;
+	border-radius: 5px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	font-size: 16px;
+}
+
+.stepify-container {
 	background: #fafafa;
 	border: 0 none;
 	border-radius: 5px;
@@ -26,8 +54,7 @@ html, body {
 	width: 80%;
 	margin: 0 10% 5% 10%;
 	font-size: 16px;
-	/*stacking fieldsets above each other*/
-	/*position: absolute;*/
+	
 }
 
 #fab {
@@ -75,6 +102,13 @@ html, body {
 #msform .action-button:hover, #msform .action-button:focus {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
 }
+
+.btn next-step, .btn prev-step {
+	border: 0 none;
+	border-radius: 1px;
+	
+}
+
 /*headings*/
 .fs-title {
 	font-size: 24px;

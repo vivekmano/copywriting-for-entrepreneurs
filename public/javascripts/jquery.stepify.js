@@ -10,7 +10,7 @@
 			stepContainerClass : 'stepify-container',
 			nextBtn : {
 				text : 'Next &gt;',
-				cssClass : 'next-step'
+				cssClass : 'btn-primary'
 			},
 			prevBtn : {
 				text : '&lt; Prev',

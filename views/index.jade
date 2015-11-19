@@ -1,6 +1,19 @@
 extends layout
 
 block content
+  .navbar
+    .container 
+      ul.nav.navbar-nav.nav-pills
+        li.active
+          a(href="#") Step 1
+        li 
+          a(href="#") Step 2
+        li 
+          a(href="#") Step 3
+        li 
+          a(href="#") Step 4
+        li 
+          a(href="#") Step 5
   form#msform(action="/", method="POST", role="form")
     fieldset.step
       h2.fs-title Headline
@@ -54,9 +67,9 @@ block content
           label Email
         .col-md-10
           input(type="text", name="email", placeholder="e.g. me@amazingidea.com")
-      .row
-        .col-md-12
-          button(type="submit").btn.btn-lg.action-button Turn my words into sweet sweet copy!
+      // .row
+      //   .col-md-12
+      //     button(type="submit").btn.btn-lg.action-button Turn my words into sweet sweet copy!
     // fieldset
     //   h2.fs-title Final touches
     //   h3.fs-desc Do you have a deadline for your customer?
