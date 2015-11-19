@@ -51,5 +51,9 @@ $('.step').stepify({
 //add onclick handler for the navigation tabs
 //when triggered, need to:
 //1) move to correct section
+    //hide current sections, unhide all other sections
 //2) make sure that the buttons below are correct
+    //?
+    
 //3) update the navbar
+    //use the code from the hooks above
